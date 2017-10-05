@@ -441,6 +441,7 @@ export default class WysiwygEditor extends Component {
           onBlur={this.onEditorBlur}
           onKeyDown={KeyDownHandler.onKeyDown}
           onMouseDown={this.onEditorMouseDown}
+          suppressContentEditableWarning
         >
           <Editor
             ref={this.setEditorReference}
