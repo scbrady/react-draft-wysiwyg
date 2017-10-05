@@ -412,6 +412,7 @@ export default class WysiwygEditor extends Component {
         onClick={this.modalHandler.onEditorClick}
         onBlur={this.onWrapperBlur}
         aria-label="rdw-wrapper"
+        suppressContentEditableWarning
       >
         <div
           className={classNames('rdw-editor-toolbar', toolbarClassName)}
@@ -441,7 +442,6 @@ export default class WysiwygEditor extends Component {
           onBlur={this.onEditorBlur}
           onKeyDown={KeyDownHandler.onKeyDown}
           onMouseDown={this.onEditorMouseDown}
-          suppressContentEditableWarning
         >
           <Editor
             ref={this.setEditorReference}
